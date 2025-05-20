@@ -8,7 +8,7 @@
                     </Toolbar>
                 </f:toolbar>
                 <f:content>
-                    <Label id="NameLabel" text="Name"/>
+                    <Label id="NameLabels" text="Name"/>
                     <Input id="NameInput" value=" "/>
                     <Label id="StreetNoLabel" text="Street/No"/>
 	                <Input id="StreetInput" value=" "/>
