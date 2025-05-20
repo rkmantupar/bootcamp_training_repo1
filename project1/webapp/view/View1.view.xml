@@ -1,0 +1,35 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" controllerName="com.acn.training.project1.controller.View1" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <f:SimpleForm id="SimpleFormToolbar" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                <f:toolbar>
+                    <Toolbar id="TB1">
+                        <Title id="FormTitle" text="Exercise 1" level="H4" titleStyle="H4"/>
+                    </Toolbar>
+                </f:toolbar>
+                <f:content>
+                    <Label id="NameLabel" text="Name"/>
+                    <Input id="NameInput" value=" "/>
+                    <Label id="StreetNoLabel" text="Street/No"/>
+	                <Input id="StreetInput" value=" "/>
+	                <Input id="NoInput" value=" "/>
+                    <Label id="ZipCodeCityLabel" text="ZIP Code/City"/>
+                    <Input id="ZipCodeInput" value=" "/>
+                    <Input id="CityInput" value=" ">
+                    </Input><Label id="TechLabel" text="Country"/>
+                    <Select id="CountryInput" selectedKey="{Country}">
+                        <items>
+                            <core:Item id="England" text="England" key="England"/>
+                            <core:Item id="Germany" text="Germany" key="Germany"/>
+                            <core:Item id="USA" text="USA" key="USA"/>
+                            <core:Item id="Philippines" text="Philippines" key="Philippines"/>
+                        </items>
+                    </Select>
+                    <Button id="SaveButton" type="Default" press="onSaveBtn" text="Save"/>
+                    <Button id="ClearButton" type="Default" press="onClearBtn" text="Clear"/>
+                </f:content>
+            </f:SimpleForm>
+
+        </content>
+    </Page>
+</mvc:View>
